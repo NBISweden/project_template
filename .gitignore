@@ -1,0 +1,17 @@
+# ignore all files starting with . or ~
+.*
+~*
+
+# ignore intermediate, logs and scratch dirs
+intermediate
+logs
+scratch
+
+# ignore OS generated files
+.DS_Store
+Thumbs.db
+
+# -------------------------
+# Whitelisted files
+# -------------------------
+!.gitignore
