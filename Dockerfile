@@ -22,8 +22,9 @@ COPY environment.yml .
 RUN conda env update -n root -f environment.yml && \
     conda clean --all
 
-# Add the workflow files
+# Add the workflow files and the code
 COPY Snakefile config.yml ./
+COPY code ./code/
 
 # Start Bash shell by default
 CMD /bin/bash
