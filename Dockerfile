@@ -39,6 +39,7 @@ USER ${NB_USER}
 # Add the workflow files and the code
 COPY Snakefile config.yml ./
 COPY code ./code/
+COPY notebooks ./notebooks/
 
 # Start Bash shell by default
 CMD /bin/bash
