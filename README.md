@@ -5,6 +5,7 @@ The intended contents of each directory is explained in separate README.md files
 
 ##Overview
 
+```
 project
 |- doc/                documentation for the study
 |
@@ -30,3 +31,4 @@ project
 |- config.yml          configuration of the project workflow
 |- environment.yml     software dependencies list, used to create a project environment
 |- Dockerfile          recipe to create a project container
+```
