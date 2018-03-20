@@ -1,13 +1,12 @@
 configfile: "config.yml"
 
 rule all:
-    """Concatenate inputs"""
+    """Convert README.md to upper case"""
     input:
-        "foo",
-        "bar"
+        "code/README.md"
     output:
-        "foobar"
+        "scratch/README.upper.md"
     params:
         msg = config["msg_to_print"]
     shell:
-        "echo {params.msg} && cat {input[0]} {input[1]} > {output}"
+        "echo {params.msg} && tr [a-z] [A-Z] < {input} > {output}"
