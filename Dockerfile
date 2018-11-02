@@ -4,9 +4,9 @@ LABEL description = "Lightweight image with Conda, Jupyter Notebook and Snakemak
 # Install Miniconda3 and prerequisites
 RUN apt-get update && \
     apt-get install -y --no-install-recommends bzip2 curl ca-certificates
-RUN curl https://repo.continuum.io/miniconda/Miniconda3-4.3.31-Linux-x86_64.sh -O && \
-    bash Miniconda3-4.3.31-Linux-x86_64.sh -bf -p /opt/miniconda3/ && \
-    rm Miniconda3-4.3.31-Linux-x86_64.sh
+RUN curl https://repo.continuum.io/miniconda/Miniconda3-4.5.11-Linux-x86_64.sh -O && \
+    bash Miniconda3-4.5.11-Linux-x86_64.sh -bf -p /opt/miniconda3/ && \
+    rm Miniconda3-4.5.11-Linux-x86_64.sh
 
 # Add Conda to PATH
 ENV PATH="/opt/miniconda3/bin:${PATH}"
